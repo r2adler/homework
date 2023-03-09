@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Message.module.css'
-import {MessageType} from "../HW1";
+import {MessageType} from '../HW1';
 
 
 // нужно создать правильный тип вместо any
@@ -16,8 +16,9 @@ const Message = (props: MessagePropsType) => {
             <div className={s.imageAndText}>
                 {/*создаёт студент*/}
                 <img src={props.message.user.avatar}
-                    id={'hw1-avatar-' + props.message.id}
+                     id={'hw1-avatar-' + props.message.id}
                 />
+                <div className={s.angle}/>
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
